@@ -1,69 +1,260 @@
+.firstScreen{
+	background: url(/template/img/bg.png);
+	background-size: cover;
+	background-position: center;
+}
 
-// Colors
+//HEADER
 
-$blue: #007eff;
-$dark: #1c1c1c;
-$white: #ffffff;
-
-.template {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: $dark;
-	color: $white;
-	padding: 10px;
-	&-title {
-		font-size: 36px;
-		margin: 20px 0;
-		font-weight: bold;
-		text-align: center;
-	}
-	&-avatar {
-		width: 100px;
-		height: 100px;
-	}
-	&-readme {
-		&__title {
-			font-size: 26px;
-			margin: 20px 0;
-			font-weight: bold;
-		}
-		&__item {
-			position: relative;
-			margin: 10px 0;
-			font-size: 18px;
-			color: $dark;
-			background: white;
-			padding: 10px;
-			padding-left: 30px;
-			border-radius: 5px;
-			&::after {
-				content: "";
-				display: block;
-				position: absolute;
-				left: -1px;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 20px 0 20px 20px;
-				border-color: transparent transparent transparent $dark;
-				top: 50%;
-				transform: translateY(-50%);
+.header{
+	background: $dark;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	&-wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__navigation{
+			display: flex;
+			&:last-child{
+				margin-right: 0;
+			}
+			li{
+				margin-right: 80px;
+			}
+			a{
+				color: $white;
+				transition: all .3s;
 			}
 		}
-		&__code {
-			font-style: italic;
-			color: $blue;
+		&__links{
+			display: flex;
+			align-items: center;
+			&-basket{
+				border: 2px solid $orange;
+				border-radius: 6px;
+				padding: 8px;
+				transition: all .3s;
+				flex: 0 0 45px;
+				&:hover{
+					background: $orange;
+				}
+			}	
+			&-call{
+				flex: 0 0 145px;
+				margin-left: 45px;
+				.btn{
+					height: 45px;
+					border-radius: 10px;
+					color: $white;
+				}
+			}
 		}
-		&__link {
-			text-decoration: underline;
-			color: $blue;
-		}
-	}
-	.template-red-text {
-		color: red;
 	}
 
+}
+
+//WELCOME
+
+.welcome{
+	padding: 165px 0 100px;
+	&__title{
+		font-family: Poiret One;
+		font-size: 80px;
+		color: $orange;
+		text-align: center;
+	}
+	&__description{
+		font-size: 22px;
+		padding: 35px 0 45px 0;
+		text-align: center;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	&__btn{
+		.btn{
+			margin: 0 auto;
+		}
+	}
+	&-dishes{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding-top: 75px;
+		font-family: Poiret One;
+		max-width: 900px;
+		margin: 0 auto;
+		&__wrap{
+			transition: all .3s;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+		&__img{
+			position: relative;
+			img{
+				border-radius: 12px;
+			}
+			&::before{
+				content: '';
+				width: 100%;
+				height: 100%;
+				border-radius: 12px;
+				background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.89) 86.667%);
+				top: 0;
+				left: 0;
+				position: absolute;
+			}
+		}
+		&__text{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 25px;
+			font-size: 20px;
+			color: $white;
+		}
+	}
+}
+
+//FOOD
+
+.food{
+	&-title{
+		padding: 100px 0 70px 0;
+	}
+	&-wrap{
+		display: flex;
+		flex-flow: row wrap;
+		&__img{
+			flex: 0 0 500px;
+			position: relative;
+				&::before{
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					border: 3px solid rgb(228, 71, 22);
+					border-radius: 12px;
+					bottom: -15px;
+					left: -15px;
+					z-index: -1;
+				}
+			img{
+				border-radius: 12px;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-text{
+			flex: 1 0;
+			padding-left: 100px;
+			&__title{
+				color: $orange;
+				font-family: Poiret One;
+				font-size: 36px;
+				padding-bottom: 30px;
+				span{
+					display: block;
+				}
+			}
+		}
+	}
+	&-category{
+		max-width: 930px;
+		margin: 0 auto;
+	}
+	&__btn{
+		margin: 0 auto;
+		padding-top: 50px;
+		.btn{
+			margin: 0 auto;
+		}
+	}
+}
+
+//RESTOURANT
+
+.restaurant{
+	&-wrap{
+		display: flex;
+		flex-flow: row wrap;
+		&-text{
+			flex: 1 0;
+			padding-right: 80px;
+			&__title{
+				color: $orange;
+				font-family: Poiret One;
+				font-size: 36px;
+				span{
+					display: block;
+				}
+			}
+			&__description{
+				padding-top: 30px;
+				p{
+					margin: 0;
+					padding-bottom: 10px;
+					&:last-child{
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+		&-slider{
+			flex: 0 0 500px;
+			max-width: 500px;
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 90%;
+				border: 3px solid #e44716;
+				border-radius: 12px;
+				bottom: 10px;
+				right: -15px;
+				z-index: -1;
+			}
+			&-init{
+				&__img{
+					img{
+						border-radius: 12px;
+					}
+				}
+				.slick-dots{
+					bottom: -55px;
+
+					.slick-active{
+						button{
+							&::before{
+								background: $orange;
+							}
+						}
+					}
+				}
+				.slick-dots li button:before {
+					font-family: '';
+					font-size: 0;
+					line-height: 20px;
+					position: absolute;
+					border-radius: 20px;
+					opacity: 1;
+					top: 0;
+					background: transparent;
+					border: 1px solid $orange;
+					left: 0;
+					width: 20px;
+					height: 20px;
+					content: '•';
+					text-align: center;
+					transition: all .3s;
+					
+				}
+			}
+		}
+	}
 }
