@@ -1,26 +1,59 @@
 {
 	"name": "products",
-	"products": [
+	"tags": [
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
+			"name": "PIZZA",
+			"thumb": "andriilizvinskyilight/img/category/pizza.png",
+			"products": [
+				{
+					"name": "МАРГАРИТА",
+					"price": "222ГРН",
+					"weight": "400Г",
+					"description": "Тісто фірмове, томатна основа, моцарела, помідори чері, соус песто, базилік",
+					"thumb": "/andriilizvinskyilight/img/menu/2.jpg"
+				},
+				{
+					"name": "МИСЛИВСЬКА",
+					"price": "250ГРН",
+					"weight": "500Г",
+					"description": "Тісто фірмове, томатна основа, моцарела, маринована цибуля, песто, шампіньйони соус болоньєзе, ковбаски мисливські, перець чилі",
+					"thumb": "/andriilizvinskyilight/img/menu/1.jpg"
+				},
+				{
+					"name": "ФЕЛІЧІТА",
+					"price": "250ГРН",
+					"weight": "200Г",
+					"description": "Соус томатний, сир моцарела, куряче філе, бекон, яйце",
+					"thumb": "/andriilizvinskyilight/img/menu/3.jpg"
+				}
+			]
 		},
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
+			"name": "SUSHI",
+			"thumb": "andriilizvinskyilight/img/category/sushi.png",
+			"products": [
+				{
+					"name": "ТУНА СЕТ",
+					"price": "500ГРН",
+					"weight": "400Г",
+					"description": "Філадельфія з тунцем, Канада з тунцем, Канада вершкова",
+					"thumb": "/andriilizvinskyilight/img/menu/sushi/2.png"
+				},
+				{
+					"name": "ФІЛАДЕЛЬФІЯ СЕТ",
+					"price": "555ГРН",
+					"weight": "500Г",
+					"description": "Філадельфія з лососем, Філадельфія з тунцем, Філадельфія з вугрем",
+					"thumb": "/andriilizvinskyilight/img/menu/sushi/1.png"
+				},
+				{
+					"name": "ЧОРНИЙ СЕТ",
+					"price": "600ГРН",
+					"weight": "200Г",
+					"description": "Філадельфія з авокадо, персиком та лососем, Каліфорнія з тунцем та дайконом",
+					"thumb": "/andriilizvinskyilight/img/menu/sushi/3.png"
+				}
+			]
 		}
 	]
 }

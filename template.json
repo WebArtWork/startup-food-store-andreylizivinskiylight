@@ -2,20 +2,25 @@
 	"title": "Welcome to waw Template",
 	"description": "description",
 	"keywords": "keywords",
-	"prefix": "/template",
+	"prefix": "/andriilizvinskyilight",
 	"picture": "picture",
 	"author": "author",
 	"moderators": [],
 	"scss": "scss/index.scss",
 	"variables": {
-		"land_video": "/template/img/lands.MP4",
-		"land_image": "/template/img/2.webp",
+		"land_video": "/andriilizvinskyilight/img/lands.MP4",
+		"land_image": "/andriilizvinskyilight/img/2.webp",
 		"primary_color": "#d3c9b7",
 		"secondary_color": "#f2f1ed",
 		"primary_text_color": "#000000",
 		"secondary_text_color": "#FFFFFF",
 		"primary_radius": "0",
-		"secondar_radius": "0"
+		"secondar_radius": "0",
+		"time": "11:00 - 22: 00",
+		"tel": "+380689813717",
+		"mail": "testmail@gmail.com",
+		"insta": "@Test_Inst",
+		"telega": "@test02"
 	},
 	"store": {
 		"name": "Store Name",
@@ -27,21 +32,21 @@
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			},
 			{
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			},
 			{
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			}
 		],
@@ -50,21 +55,21 @@
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			},
 			{
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			},
 			{
 				"id": "/product",
 				"price": 1200,
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "product"
 			}
 		],
@@ -72,19 +77,19 @@
 			{
 				"id": "/article",
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "article"
 			},
 			{
 				"id": "/article",
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "article"
 			},
 			{
 				"id": "/article",
 				"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 				"name": "article"
 			}
 		],
