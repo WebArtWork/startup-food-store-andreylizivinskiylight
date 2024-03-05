@@ -23,6 +23,9 @@
 			}
 			li{
 				margin-right: 80px;
+				&:last-child{
+					margin-right: 0;
+				}
 			}
 			a{
 				color: $white;
@@ -131,6 +134,7 @@
 		&__img{
 			flex: 0 0 500px;
 			position: relative;
+			height: fit-content;
 				&::before{
 					content: '';
 					position: absolute;
@@ -208,6 +212,7 @@
 			flex: 0 0 500px;
 			max-width: 500px;
 			position: relative;
+			height: fit-content;
 			&::before{
 				content: "";
 				position: absolute;
@@ -426,5 +431,315 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.header {
+		padding: 10px 0;
+	}
+	.header-wrap__links-call .btn {
+		font-size: 16px;
+	}
+	.header-wrap__navigation a{
+		font-size: 18px;
+	}
+	.header-wrap__links-call {
+		flex: 0 0 93px;
+		margin-left: 32px;
+	}
+	.welcome {
+		padding: 135px 0 70px;
+	}
+	.welcome-dishes {
+		padding-top: 55px;
+	}
+	.welcome__description {
+		font-size: 20px;
+	}
+	.welcome-dishes__img img{
+		max-width: 200px;
+	}
+	.welcome-dishes {
+		max-width: 850px;
+	}
+	.welcome__title{
+		font-size: 70px;
+	}
+	.food-title {
+		padding: 70px 0 50px 0;
+	}
+	.global-title {
+		font-size: 68px;
+		&__img{
+			svg{
+				max-width: 60px;
+			}	
+		}
+	}
+	.food-wrap__img {
+		flex: 0 0 460px;
+		position: relative;
+	}
+	.food-wrap-text {
+		flex: 1 0;
+		padding-left: 50px;
+	}
+	.food-wrap-text__description, .restaurant-wrap-text__description{
+		font-size: 18px;
+	}
+	.food-wrap-text__title, .restaurant-wrap-text__title{
+		font-size: 32px;
+	}
+	.restaurant-wrap-slider{
+		margin-right: 16px;
+	}
+	.food-wrap__img::before {
+		bottom: -10px;
+		left: -10px;
+	}
+	.restaurant-wrap-slider::before{
+		bottom: 10px;
+		right: -10px;
+	}
+	.articles-l__item-img::before {
+		bottom: -10px;
+		left: -10px;
+	}
+	.articles-l__item-text{
+		font-size: 22px;
+	}
+	.articles-l__description {
+		padding-top: 30px;
+		color: $black;
+		font-size: 18px;
+	}
+	.articles-l-wrap {
+		margin: 0 15px;
+	}
+	.contacts-map__icons-item{
+		img{
+			max-width: 120px;
+		}
+	}
+	.footer-wrap__item--socials{
+		flex-flow: column wrap;
+	}
+	.footer-wrap__item--links .footer-wrap__item-link p {
+		font-size: 22px;
+	}
+	.footer-wrap__item--links .footer-wrap__item-link a {
+		font-size: 14px;
+	}
+	.footer-wrap__item--socials a span {
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	.footer-wrap__item--socials a img {
+		max-width: 20px;
+		height: 20px;
+	}
+	.contacts-map iframe {
+		height: 300px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.welcome-dishes {
+		max-width: 559px;
+	}
+	.food-wrap__img {
+		flex: 0 0 325px;
+		position: relative;
+	}
+	.food-wrap-text__title, .restaurant-wrap-text__title {
+		font-size: 28px;
+		padding-bottom: 20px;
+	}
+	.restaurant-wrap-slider {
+		flex: 0 0 330px;
+		max-width: 330px;
+	}
+	.restaurant-wrap-text__description{
+		padding: 0;
+	}
+	.header-wrap__navigation li {
+		margin-right: 60px;
+	}
+	.header-wrap__links-call .btn {
+		font-size: 14px;
+	}
+	.welcome-dishes__img img {
+		max-width: 140px;
+	}
+	.welcome-dishes__text {
+		bottom: 7px;
+		font-size: 16px;
+	}
+	.food-wrap{
+		flex-flow: column wrap;
+	}
+	.food-wrap-text {
+		flex: 1 0;
+		padding: 20px 0 20px 0;
+	}
+	.food-wrap-text {
+		flex: 1 0;
+		padding: 30px 0 20px 0;
+	}
+	.welcome-dishes {
+		max-width: 700px;
+	}
+	.articles-l__column--second {
+		padding-left: 70px;
+	}
+	.contacts-map__icons-item img {
+		max-width: 90px;
+	}
+	.restaurant-wrap-text {
+		flex: 1 0;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.welcome__title {
+		font-size: 46px;
+	}
+	.welcome__description {
+		font-size: 18px;
+		line-height: 1.1;
+		padding: 20px 0 35px;
+	}
+	.global-title {
+		font-size: 40px;
+	}
+	.global-title__img svg {
+		max-width: 38px;
+	}
+	.global-title__img {
+		margin-right: 15px;
+		display: flex;
+	}
+	.food-title {
+		padding: 50px 0 30px 0;
+	}
+	.food-wrap__img img {
+		border-radius: 12px;
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+	.food-wrap__img {
+		flex: 0 0 100%;
+	}
+	.restaurant-wrap-slider {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.restaurant-wrap-slider-init__img img {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+	.restaurant-wrap-slider::before {
+		bottom: 10px;
+		right: 10px;
+	}
+	.restaurant-wrap-text {
+		flex: 1 0;
+		padding: 0 50px 30px 0;
+	}
+	.articles-l-wrap {
+		display: block;
+	}
+	.articles-l__column--second {
+		padding-left: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.articles-l__column--first {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.articles-l__column--second {
+		margin-top: 0;
+	}
+	.contacts-map {
+		padding: 5px;
+		border: 2px solid #e44716;
+		border-radius: 12px;
+	}
+	.contacts-map__icons-item img {
+		max-width: 60px;
+	}
+	.footer-wrap {
+		flex-flow: column wrap;
+		align-items: center;
+	}
+	.footer-wrap__item--logo {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+		order: -1;
+	}
+	.footer-wrap__item--links {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 20px 0;
+	}
+	.footer-wrap__item--socials {
+		flex: 0 0 100%;
+		max-width: 100%;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.footer-wrap__item--links .footer-wrap__item-link {
+		padding: 0 22px;
+	}
+	.articles-l__column--second .articles-l__item-img::before {
+		right: 15px;
+	}
+}
+@media screen and (max-width: 479px) {
+	.welcome__title {
+		font-size: 32px;
+	}
+	.welcome__description {
+		font-size: 17px;
+	}
+	.welcome-dishes {
+		padding-top: 40px;
+	}
+	.welcome {
+		padding: 105px 0 60px;
+	}
+	.welcome-dishes__img img {
+		max-width: 105px;
+	}
+	.welcome-dishes__text {
+		font-size: 15px;
+	}
+	.food-title {
+		padding: 20px 0 10px 0;
+	}
+	.food-wrap__img img {
+		height: 200px;
+	}
+	.food-wrap-text__description, .restaurant-wrap-text__description {
+		font-size: 17px;
+	}
+	.global-title {
+		font-size: 35px;
+	}
+	.restaurant-wrap-slider-init__img img {
+		width: 100%;
+		height: 200px;
+	}
+	.restaurant-wrap-slider::before {
+		bottom: 18px;
+		right: 10px;
+	}
+	.articles-l__item-text {
+		font-size: 20px;
 	}
 }

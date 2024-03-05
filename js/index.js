@@ -1,3 +1,7 @@
+$(".burger-wrap").click(function () {
+  $(".header-wrap__navigation").toggleClass("header-wrap__navigation--open");
+  $(".burger").toggleClass('burger--close');
+});
 $('.restaurant-wrap-slider-init').slick({
     dots: true,
     infinite: true,
