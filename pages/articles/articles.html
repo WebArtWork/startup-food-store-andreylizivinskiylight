@@ -1,3 +1,4 @@
+<!--
 {% for article in articles %}
 <a href="/article/{{{article.id}}}" class="article__item">
 	<h1>{{{article.name}}}</h1>
@@ -7,3 +8,159 @@
 	</pre>
 </a>
 {% endfor %}
+-->
+<div class="content">
+	<header class="header">
+			<div class="container">
+				<div class="header-wrap">
+					<div class="header-wrap__logo">
+						<img src="/andriilizvinskyilight/img/icon/logo.svg" alt="">
+					</div>
+					<div class="burger-wrap">
+						<div class="burger"></div>
+					</div>
+					<ul class="header-wrap__navigation">
+						<li><a href="">HOME</a></li>
+						<li><a href="">MENU</a></li>
+						<li><a href="">ARTICLE</a></li>
+					</ul>
+					<div class="header-wrap__links">
+						<a href="" class="header-wrap__links-basket">
+							<img src="/andriilizvinskyilight/img/icon/basket.svg" alt="">
+						</a>
+						<div class="header-wrap__links-call">
+							<a href="" class="btn">CALL BACK</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<section class="articles-l">
+		<div class="container">
+			<div class="food-title global-title">
+				<div class="food-title__img global-title__img">
+					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M80.4039 49.0215V49.6452L80.9639 49.9195C81.2949 50.0817 81.5741 50.3329 81.7702 50.645C81.9657 50.9563 82.0709 51.3158 82.0738 51.6834V76.7285C82.0738 78.5891 81.3347 80.3735 80.0191 81.6891C78.7034 83.0047 76.9191 83.7438 75.0585 83.7438C73.1979 83.7438 71.4136 83.0047 70.0979 81.6891C68.7823 80.3735 68.0432 78.5891 68.0432 76.7285V56.6884C68.0455 54.8284 68.7855 53.0452 70.1007 51.73C71.4161 50.4146 73.1995 49.6747 75.0597 49.6725H75.3928H76.3928V48.6725V44.6657V43.6657H75.3928H68.3788H68.3787C68.1154 43.6657 67.8546 43.6138 67.6113 43.5131C67.3679 43.4123 67.1468 43.2646 66.9606 43.0784C66.7744 42.8921 66.6267 42.671 66.5259 42.4277C66.4251 42.1844 66.3733 41.9236 66.3733 41.6603V41.6602V18.2796V18.2794C66.3729 16.7005 66.6836 15.137 67.2876 13.6782C67.8916 12.2194 68.7771 10.8939 69.8934 9.77742C71.0098 8.66091 72.3352 7.77527 73.7939 7.17109C75.2526 6.56691 76.8161 6.25602 78.395 6.2562H78.3951L78.3997 6.2562C78.3998 6.2562 78.3998 6.2562 78.3999 6.2562C78.4 6.2562 78.4 6.2562 78.4 6.2562C78.9316 6.25646 79.4413 6.46782 79.817 6.8438C80.1929 7.21987 80.404 7.72983 80.4039 8.26151V8.26172V49.0215Z" stroke="#E44716" stroke-width="2"/>
+						<path d="M44.6643 38.8667V38.1032L43.9278 37.902C41.7464 37.3062 39.8205 36.0115 38.4454 34.2163C37.0706 32.4216 36.3222 30.2256 36.3147 27.9649V16.6103C36.318 13.8649 37.4101 11.233 39.3515 9.29191C41.2928 7.35091 43.9247 6.25918 46.6698 6.2562C49.415 6.25918 52.0469 7.35091 53.9882 9.29191C55.9297 11.2332 57.0219 13.8653 57.025 16.6108V27.965C57.0174 30.2257 56.269 32.4216 54.8942 34.2163C53.5191 36.0115 51.5933 37.3062 49.4119 37.902L48.6754 38.1031V38.8666V49.2702V49.9443L49.3003 50.1972C50.5939 50.7206 51.7021 51.6179 52.4832 52.7744C53.264 53.9306 53.6825 55.2933 53.6851 56.6885C53.6851 56.6888 53.6851 56.6892 53.6851 56.6895L53.6851 76.7285C53.6851 78.5891 52.946 80.3735 51.6304 81.6891C50.3148 83.0047 48.5304 83.7438 46.6698 83.7438C44.8093 83.7438 43.0249 83.0047 41.7093 81.6891C40.3937 80.3735 39.6545 78.5891 39.6545 76.7285V56.6888C39.6571 55.2935 40.0756 53.9307 40.8565 52.7744C41.6376 51.618 42.7457 50.7207 44.0394 50.1972L44.6643 49.9444V49.2702V38.8667Z" stroke="#E44716" stroke-width="2"/>
+						<path d="M24.6252 8.26172V8.26163C24.6252 7.99826 24.6771 7.73747 24.7778 7.49415C24.8786 7.25083 25.0263 7.02974 25.2126 6.84352C25.3988 6.65729 25.6199 6.50957 25.8632 6.4088C26.1065 6.30803 26.3673 6.25617 26.6307 6.2562H26.6309C26.8942 6.25617 27.155 6.30803 27.3983 6.4088C27.6417 6.50957 27.8627 6.65729 28.049 6.84352L28.7561 6.13641L28.049 6.84352C28.2352 7.02974 28.3829 7.25083 28.4837 7.49415L29.4076 7.11151L28.4837 7.49415C28.5845 7.73747 28.6363 7.99826 28.6363 8.26163V8.26172V26.6295C28.6288 28.8901 27.8803 31.086 26.5056 32.8807C25.1305 34.6759 23.2046 35.9706 21.0232 36.5664L20.2867 36.7676V37.5311V49.2702V49.9443L20.9116 50.1972C22.2053 50.7206 23.3134 51.6179 24.0945 52.7744C24.8754 53.9306 25.2938 55.2933 25.2965 56.6885C25.2965 56.6888 25.2965 56.6892 25.2965 56.6895L25.2965 76.7285C25.2965 78.5891 24.5573 80.3735 23.2417 81.6891C21.9261 83.0047 20.1417 83.7438 18.2812 83.7438C16.4206 83.7438 14.6362 83.0047 13.3206 81.6891C12.005 80.3735 11.2659 78.5891 11.2659 76.7285V56.6888C11.2684 55.2935 11.6869 53.9307 12.4678 52.7744C13.2489 51.618 14.3571 50.7207 15.6507 50.1972L16.2756 49.9444V49.2702V37.5311V36.7676L15.5391 36.5664C13.3577 35.9706 11.4319 34.6759 10.0568 32.8807C8.68197 31.086 7.93351 28.89 7.92603 26.6292V8.26172C7.92603 7.72982 8.13732 7.21971 8.51343 6.8436C8.88954 6.46749 9.39965 6.2562 9.93155 6.2562C10.4634 6.2562 10.9736 6.46749 11.3497 6.8436C11.7258 7.21971 11.9371 7.72982 11.9371 8.26172V21.9538V22.9538H12.9371H15.2756H16.2756V21.9538V8.26172C16.2756 7.72982 16.4869 7.21971 16.863 6.8436C17.2391 6.46749 17.7493 6.2562 18.2812 6.2562C18.8131 6.2562 19.3232 6.46749 19.6993 6.8436C20.0754 7.21971 20.2867 7.72982 20.2867 8.26172V21.9538V22.9538H21.2867H23.6252H24.6252V21.9538V8.26172Z" stroke="#E44716" stroke-width="2"/>
+					</svg>						
+				</div>
+				<div class="food-title__text global-title__text">
+					OUR ARTICLES
+				</div>
+			</div>
+			<div class="articles-l-wrap">
+				<div class="articles-l__column articles-l__column--first">
+					<a href="" class="articles-l__item">
+						<div class="articles-l__item-img">
+							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
+							<div class="articles-l__item-text">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="articles-l__description">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</div>
+					</a>
+					<a href="" class="articles-l__item">
+						<div class="articles-l__item-img">
+							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
+							<div class="articles-l__item-text">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="articles-l__description">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</div>
+					</a>
+					<a href="" class="articles-l__item">
+						<div class="articles-l__item-img">
+							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
+							<div class="articles-l__item-text">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="articles-l__description">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</div>
+					</a> 
+				</div>
+				<div class="articles-l__column articles-l__column--second">
+					<a href="" class="articles-l__item">
+						<div class="articles-l__item-img">
+							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
+							<div class="articles-l__item-text">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="articles-l__description">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</div>
+					</a>
+					<a href="" class="articles-l__item">
+						<div class="articles-l__item-img">
+							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
+							<div class="articles-l__item-text">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="articles-l__description">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-wrap">
+			<div class="footer-wrap__item footer-wrap__item--links">
+				<div class="footer-wrap__item-link">
+					<p>Links</p>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+				</div>
+				<div class="footer-wrap__item-link">
+					<p>Links</p>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+				</div>
+				<div class="footer-wrap__item-link">
+					<p>Links</p>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+					<a href="">First link for sec</a>
+				</div>
+			</div>
+			<div class="footer-wrap__item footer-wrap__item--logo">
+				<img src="/andriilizvinskyilight/img/footer.svg" alt="">
+			</div>
+			<div class="footer-wrap__item footer-wrap__item--socials">
+				<a href="">
+					<img src="/andriilizvinskyilight/img/icon/mail.svg" alt="">
+					<span>@examplemail@gmail.com</span>
+				</a>
+				<a href="">
+					<img src="/andriilizvinskyilight/img/icon/call.svg" alt="">
+					<span>+380 836547145</span>
+				</a>
+				<a href="">
+					<img src="/andriilizvinskyilight/img/icon/tel.svg" alt="">
+					<span>@KpRestorNich</span>
+				</a>
+				<a href="">
+					<img src="/andriilizvinskyilight/img/icon/inst.svg" alt="">
+					<span>@re_st_or_an__kp01</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
