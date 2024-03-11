@@ -8,7 +8,7 @@
 
 .header{
 	background: $dark;
-	padding: 15px 0;
+	padding: 5px 0;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -444,9 +444,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-	.header {
-		padding: 10px 0;
-	}
 	.header-wrap__links-call .btn {
 		font-size: 16px;
 	}

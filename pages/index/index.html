@@ -61,30 +61,16 @@
 					</a>
 				</div>
 				<div class="welcome-dishes">
+					{% for product in top_products %}
 					<a href="" class="welcome-dishes__wrap">
 						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/meal.png" alt="">
+							<img src="{{{product.thumb}}}" alt="">
 							<div class="welcome-dishes__text">
-								MEAL
+								{{{product.name}}}
 							</div>
 						</div>
 					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/pizza.png" alt="">
-							<div class="welcome-dishes__text">
-								PIZZA
-							</div>
-						</div>
-					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/sushi.png" alt="">
-							<div class="welcome-dishes__text">
-								SUSHI
-							</div>
-						</div>
-					</a>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -118,30 +104,16 @@
 					</div>
 				</div>
 				<div class="welcome-dishes food-category">
+					{% for product in top_products %}
 					<a href="" class="welcome-dishes__wrap">
 						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/meal.png" alt="">
+							<img src="{{{product.thumb}}}" alt="">
 							<div class="welcome-dishes__text">
-								MEAL
+								{{{product.name}}}
 							</div>
 						</div>
 					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/pizza.png" alt="">
-							<div class="welcome-dishes__text">
-								PIZZA
-							</div>
-						</div>
-					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/sushi.png" alt="">
-							<div class="welcome-dishes__text">
-								SUSHI
-							</div>
-						</div>
-					</a>
+					{% endfor %}
 				</div>
 				<div class="food__btn">
 					<a href="" class="btn">
@@ -214,36 +186,31 @@
 			</div>
 			<div class="articles-l-wrap">
 				<div class="articles-l__column articles-l__column--first">
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+					{% for article in articles %}
+						<a href="" class="articles-l__item">
+							<div class="articles-l__item-img">
+								<img src="{{{article.thumb}}}" alt="">
+								<div class="articles-l__item-text">
+									{{{article.name}}}
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/2.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
-							</div>
-						</div>
-					</a>
+						</a>
+					{% endfor %}
 				</div>
 				<div class="articles-l__column articles-l__column--second">
+					{% for mainart in mainarc %}
 					<a href="" class="articles-l__item">
 						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
+							<img src="/{{{mainart.thumb}}}" alt="">
 							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+								{{{mainart.name}}}
 							</div>
 						</div>
 						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+							{{{mainart.short}}}
 						</div>
 					</a>
+					{% endfor %}
 				</div>
 			</div>
 		</div>

@@ -37,7 +37,7 @@
 	</header>
 	<section class="articles-l">
 		<div class="container">
-			<div class="food-title global-title">
+			<div class="food-title global-title article__main-title">
 				<div class="food-title__img global-title__img">
 					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M80.4039 49.0215V49.6452L80.9639 49.9195C81.2949 50.0817 81.5741 50.3329 81.7702 50.645C81.9657 50.9563 82.0709 51.3158 82.0738 51.6834V76.7285C82.0738 78.5891 81.3347 80.3735 80.0191 81.6891C78.7034 83.0047 76.9191 83.7438 75.0585 83.7438C73.1979 83.7438 71.4136 83.0047 70.0979 81.6891C68.7823 80.3735 68.0432 78.5891 68.0432 76.7285V56.6884C68.0455 54.8284 68.7855 53.0452 70.1007 51.73C71.4161 50.4146 73.1995 49.6747 75.0597 49.6725H75.3928H76.3928V48.6725V44.6657V43.6657H75.3928H68.3788H68.3787C68.1154 43.6657 67.8546 43.6138 67.6113 43.5131C67.3679 43.4123 67.1468 43.2646 66.9606 43.0784C66.7744 42.8921 66.6267 42.671 66.5259 42.4277C66.4251 42.1844 66.3733 41.9236 66.3733 41.6603V41.6602V18.2796V18.2794C66.3729 16.7005 66.6836 15.137 67.2876 13.6782C67.8916 12.2194 68.7771 10.8939 69.8934 9.77742C71.0098 8.66091 72.3352 7.77527 73.7939 7.17109C75.2526 6.56691 76.8161 6.25602 78.395 6.2562H78.3951L78.3997 6.2562C78.3998 6.2562 78.3998 6.2562 78.3999 6.2562C78.4 6.2562 78.4 6.2562 78.4 6.2562C78.9316 6.25646 79.4413 6.46782 79.817 6.8438C80.1929 7.21987 80.404 7.72983 80.4039 8.26151V8.26172V49.0215Z" stroke="#E44716" stroke-width="2"/>
@@ -51,68 +51,34 @@
 			</div>
 			<div class="articles-l-wrap">
 				<div class="articles-l__column articles-l__column--first">
+					{% for article in articles %}
 					<a href="" class="articles-l__item">
 						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
+							<img src="{{{article.thumb}}}" alt="">
 							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+								{{{article.maintitle}}}
 							</div>
 						</div>
 						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+							{{{article.description}}}
 						</div>
 					</a>
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
-							</div>
-						</div>
-						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
-						</div>
-					</a>
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
-							</div>
-						</div>
-						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
-						</div>
-					</a> 
+					{% endfor %}
 				</div>
 				<div class="articles-l__column articles-l__column--second">
+					{% for maint in main %}
 					<a href="" class="articles-l__item">
 						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
+							<img src="{{{maint.thumb}}}" alt="">
 							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+								{{{maint.maintitle}}}
 							</div>
 						</div>
 						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+							{{{maint.description}}}
 						</div>
 					</a>
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
-							</div>
-						</div>
-						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
-						</div>
-					</a>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
