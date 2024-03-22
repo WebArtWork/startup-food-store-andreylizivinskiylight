@@ -365,6 +365,11 @@ ul{
 			max-width: 80%;
 			border-right: none;
 		}
+		&--prod{
+			flex: 0 0 70%;
+			max-width: 70%;
+			border-right: none;
+		}
 	}
 }
 /*  burger  */

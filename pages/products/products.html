@@ -3,23 +3,23 @@
 		<header class="header">
 			<div class="container">
 				<div class="header-wrap">
-					<div class="header-wrap__logo">
+					<a href="/" class="header-wrap__logo">
 						<img src="/andriilizvinskyilight/img/icon/logo.svg" alt="">
-					</div>
+					</a>
 					<div class="burger-wrap">
 						<div class="burger"></div>
 					</div>
 					<ul class="header-wrap__navigation">
-						<li><a href="">HOME</a></li>
-						<li><a href="">MENU</a></li>
-						<li><a href="">ARTICLE</a></li>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/products">MENU</a></li>
+						<li><a href="/articles">ARTICLE</a></li>
 					</ul>
 					<div class="header-wrap__links">
 						<a href="" class="header-wrap__links-basket">
 							<img src="/andriilizvinskyilight/img/icon/basket.svg" alt="">
 						</a>
 						<div class="header-wrap__links-call">
-							<a href="" class="btn">CALL BACK</a>
+							<a href="{{{variables.link_phone}}}" class="btn">CALL BACK</a>
 						</div>
 					</div>
 				</div>
@@ -116,17 +116,15 @@
 						</div>
 					</div>
 					<div class="wrapper-right-contacts wrapper-right-contacts--mobile">	
-						<!--
 						<div class="wrapper-right-contacts__wrap">
 							<div class="wrapper-right-contacts__wrap-img">
-								<img src="/andriilizvinskiy/img/icons/clock.svg" alt="">
+								<img src="/andriilizvinskyilight/img/icon/clock.svg" alt="">
 							</div>
 							<div class="wrapper-right-contacts__wrap-text">
-								11:00 - 22: 00
+								{{{variables.time}}}
 							</div>
 						</div>
-						-->
-						<a href="" class="wrapper-right-contacts__wrap">
+						<a href="{{{variables.link_mail}}}" class="wrapper-right-contacts__wrap">
 							<div class="wrapper-right-contacts__wrap-img">
 								<img src="/andriilizvinskyilight/img/icon/mail.svg" alt="">
 							</div>
@@ -134,7 +132,7 @@
 								{{{variables.mail}}}
 							</div>
 						</a>
-						<a href="" class="wrapper-right-contacts__wrap">
+						<a href="{{{variables.link_phone}}}" class="wrapper-right-contacts__wrap">
 							<div class="wrapper-right-contacts__wrap-img">
 								<img src="/andriilizvinskyilight/img/icon/call.svg" alt="">
 							</div>
@@ -142,7 +140,7 @@
 								{{{variables.tel}}}
 							</div>
 						</a>
-						<a href="" class="wrapper-right-contacts__wrap">
+						<a href="{{{variables.link_instagram}}}" class="wrapper-right-contacts__wrap">
 							<div class="wrapper-right-contacts__wrap-img">
 								<img src="/andriilizvinskyilight/img/icon/inst.svg" alt="">
 							</div>
@@ -150,12 +148,12 @@
 								{{{variables.insta}}}
 							</div>
 						</a>
-						<a href="" class="wrapper-right-contacts__wrap">
+						<a href="{{{variables.link_telegram}}}" class="wrapper-right-contacts__wrap">
 							<div class="wrapper-right-contacts__wrap-img">
 								<img src="/andriilizvinskyilight/img/icon/tel.svg" alt="">
 							</div>
 							<div class="wrapper-right-contacts__wrap-text">
-								{{{variables.workingHours}}}
+								{{{variables.telega}}}
 							</div>
 						</a>
 					</div>
@@ -234,17 +232,15 @@
 							<img src="/andriilizvinskyilight/img/icon/find.svg" alt="">
 						</div>
 						<div class="wrapper-right-contacts">	
-							<!--
 							<div class="wrapper-right-contacts__wrap">
 								<div class="wrapper-right-contacts__wrap-img">
-									<img src="/andriilizvinskiy/img/icons/clock.svg" alt="">
+									<img src="/andriilizvinskyilight/img/icon/clock.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									11:00 - 22: 00
+									{{{variables.time}}}
 								</div>
 							</div>
-							-->
-							<a href="" class="wrapper-right-contacts__wrap">
+							<a href="{{{variables.link_mail}}}" class="wrapper-right-contacts__wrap">
 								<div class="wrapper-right-contacts__wrap-img">
 									<img src="/andriilizvinskyilight/img/icon/mail.svg" alt="">
 								</div>
@@ -252,7 +248,7 @@
 									{{{variables.mail}}}
 								</div>
 							</a>
-							<a href="" class="wrapper-right-contacts__wrap">
+							<a href="{{{variables.link_phone}}}" class="wrapper-right-contacts__wrap">
 								<div class="wrapper-right-contacts__wrap-img">
 									<img src="/andriilizvinskyilight/img/icon/call.svg" alt="">
 								</div>
@@ -260,7 +256,7 @@
 									{{{variables.tel}}}
 								</div>
 							</a>
-							<a href="" class="wrapper-right-contacts__wrap">
+							<a href="{{{variables.link_instagram}}}" class="wrapper-right-contacts__wrap">
 								<div class="wrapper-right-contacts__wrap-img">
 									<img src="/andriilizvinskyilight/img/icon/inst.svg" alt="">
 								</div>
@@ -268,12 +264,12 @@
 									{{{variables.insta}}}
 								</div>
 							</a>
-							<a href="" class="wrapper-right-contacts__wrap">
+							<a href="{{{variables.link_telegram}}}" class="wrapper-right-contacts__wrap">
 								<div class="wrapper-right-contacts__wrap-img">
 									<img src="/andriilizvinskyilight/img/icon/tel.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									{{{variables.workingHours}}}
+									{{{variables.telega}}}
 								</div>
 							</a>
 						</div>

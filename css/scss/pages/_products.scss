@@ -98,16 +98,27 @@
 			display: none;
 		}
 		&--product{
+			display: flex;
+			align-items: start;
+			flex-flow: column wrap;
 			.dishes-list-sets__char{
-				flex-flow: column wrap;
-			}
-			.dishes-list-sets__char-wrap{
-				&:first-child{
-					margin-bottom: 15px;
-				}
+				flex-flow: row wrap;
 			}
 			.dishes-list-sets__buy{
-				margin-top: 25px;
+				order: 2;
+				padding: 8px 15px;
+			}
+		}
+		&--more{
+			display: flex;
+			align-items: start;
+			flex-flow: column wrap;
+			.dishes-list-sets__char{
+				flex-flow: row wrap;
+				padding: 5px 0;
+			}
+			.dishes-list-sets__buy{
+				order: 2;
 				padding: 8px 15px;
 			}
 		}
@@ -120,17 +131,35 @@
 		flex-flow: row wrap;
 		&-img{
 			flex: 0 0 345px;
+			height: fit-content;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border: 3px solid #e44716;
+				border-radius: 12px;
+				bottom: -15px;
+				right: -15px;
+				z-index: -1;
+			}
 			img{
-				border-radius: 32px;
+				border-radius: 12px;
+				width: 100%;
+				height: 345px;
+				object-fit: cover;
 			}
 		}
 		&-text{
 			flex: 1 0;
-			padding-left: 45px;
+			padding-right: 45px;
 			&__title-wrap{
 				display: flex;
 				align-items: center;
-				font-size: 30px;
+				font-size: 45px;
+				font-family: Poiret One;
+				color: #e44716;
 			}
 			&__title-img{
 				display: flex;
@@ -151,7 +180,7 @@
 				cursor: pointer;
 				&:hover{
 					svg{
-						fill:#F5C51E;
+						fill:#e44716;
 					}
 				}
 			}
@@ -162,30 +191,77 @@
 			font-size: 40px;
 			font-weight: 300;
 			padding: 45px 0;
+			display: flex;
+    		align-items: center;
+			color: #e44716;
+			&-img{
+				display: flex;
+			}
+			&-text{
+				font-family: Poiret One;
+				padding-left: 15px;
+				text-transform: uppercase;
+			}
 		}
 		&-wrapper{
 			display: flex;
 			flex-flow: row wrap;
+			&__item{
+				display: flex;
+				color: $black;
+			}
 			&__wrap{
-				flex: 0 0 33.333%;
-				max-width: 33.333%;
-				padding: 0 30px;
+				flex: 0 0 50%;
+				max-width: 50%;
+				padding: 0 15px;
 				margin-bottom: 20px;
 			}
 			&__img{
-				img{
-					border-radius: 20px;
+				flex: 0 0 138px;
+				height: fit-content;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					border: 1px solid #e44716;
+					border-radius: 12px;
+					bottom: -5px;
+					left: -5px;
+					z-index: -1;
 				}
+				img{
+					border-radius: 12px;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			&__text{
+				padding-left: 20px;
+				flex: 1 0;
 			}
 			&__title{
 				color: #E83126;
-				font-size: 26px;
-				padding: 15px 0 10px 0;
+				font-size: 20px;
+				padding: 0 0 5px 0;
+				
 			}
 			&__description{
-				font-size: 16px;
+				font-size: 14px;
+				font-weight: 300;
 				padding-bottom: 5px;
-				color: $white;
+				color: $black;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -moz-box;
+				-moz-box-orient: vertical;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				line-clamp: 3;
+				box-orient: vertical;
 			}
 		}
 	}
@@ -301,7 +377,7 @@
 		line-height: 24px;
 	}
 	.product-wrap-text {
-		padding-left: 30px;
+		padding-left: 0;
 	}
 	.product-wrap-text__description{
 		padding: 10px 0;
@@ -405,7 +481,7 @@
 	.wrapper{
 		position: relative;
 		padding: 0 !important;
-		margin-top: 40px !important;
+		margin-top: 80px !important;
 	}
 	.dishes-list {
 		padding: 0 40px;
@@ -493,7 +569,11 @@
 		transform: unset;
 	}
 	.product-wrap-img {
-		flex: 0 0 120px;
+		flex: 0 0 200px;
+		img{
+			border-radius: 12px;
+			height: 200px;
+		}
 	}
 	.product-wrap-text__title-wrap {
 		font-size: 24px;
@@ -501,9 +581,6 @@
 	.product-wrap-text__title-img svg {
 		width: 28px;
 		height: 28px;
-	}
-	.product-wrap-img img {
-		border-radius: 22px;
 	}
 	.dishes-list-sets--product{
 		.dishes-list-sets__char{
@@ -531,6 +608,7 @@
 		padding: 20px 20px 10px 0px !important;
 		margin-top: 20px;
 		height: calc(100vh - 140px) !important;
+		margin-top: 40px !important;
 	}
 	.dishes-list__text-title {
 		padding-bottom: 5px;
@@ -574,10 +652,13 @@
 		margin: 7px 0 0 0;
 	}
 	.product-wrap-img {
-		flex: 0 0 88px;
+		flex: 0 0 130px;
+		img{
+			border-radius: 8px;
+		}
 	}
 	.product-wrap-text {
-		padding-left: 15px;
+		padding-left: 0;
 	}
 	.product-wrap-text__title-text {
 		font-size: 20px;
