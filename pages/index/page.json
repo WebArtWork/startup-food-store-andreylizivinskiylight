@@ -6,24 +6,22 @@
 	"top_products": [
 		{
 			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskyilight/img/meal.png",
+			"name": "MEAL"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskyilight/img/pizza.png",
+			"name": "PIZZA"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskyilight/img/sushi.png",
+			"name": "SUSHI"
 		}
 	],
 	"products": [
@@ -53,19 +51,27 @@
 		{
 			"id": "/article",
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
+			"thumb": "/andriilizvinskyilight/img/blog/1.png",
 			"name": "article"
 		},
 		{
 			"id": "/article",
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
+			"thumb": "/andriilizvinskyilight/img/blog/1.png",
+			"name": "article"
+		}
+	],
+	"mainarc": [
+		{
+			"id": "/article",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"thumb": "andriilizvinskyilight/img/blog/3.png",
 			"name": "article"
 		},
 		{
 			"id": "/article",
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
+			"thumb": "andriilizvinskyilight/img/blog/3.png",
 			"name": "article"
 		}
 	]

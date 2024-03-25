@@ -3,24 +3,35 @@
 	"articles": [
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/andriilizvinskyilight/img/blog/1.png",
+			"maintitle": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
 		},
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/andriilizvinskyilight/img/blog/1.png",
+			"maintitle": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
 		},
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/andriilizvinskyilight/img/blog/1.png",
+			"maintitle": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
+		}
+	],
+	"main": [
+		{
+			"id": "123",
+			"thumb": "/andriilizvinskyilight/img/blog/3.png",
+			"maintitle": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
+		},
+		{
+			"id": "123",
+			"thumb": "/andriilizvinskyilight/img/blog/3.png",
+			"maintitle": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
 		}
 	]
 }

@@ -21,6 +21,9 @@
 					<div class="header-wrap__logo">
 						<img src="/andriilizvinskyilight/img/icon/logo.svg" alt="">
 					</div>
+					<div class="burger-wrap">
+						<div class="burger"></div>
+					</div>
 					<ul class="header-wrap__navigation">
 						<li><a href="">HOME</a></li>
 						<li><a href="">MENU</a></li>
@@ -31,7 +34,7 @@
 							<img src="/andriilizvinskyilight/img/icon/basket.svg" alt="">
 						</a>
 						<div class="header-wrap__links-call">
-							<a href="" class="btn">CALL BACK</a>
+							<a href="{{{variables.link_phone}}}" class="btn">CALL BACK</a>
 						</div>
 					</div>
 				</div>
@@ -40,10 +43,10 @@
 		<div class="container">
 			<div class="welcome">
 				<div class="welcome__title">
-					NAME OF RESTORANT
+					{{{variables.welcomeTitle}}}
 				</div>
 				<div class="welcome__description">
-					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+					{{{variables.welcomeDesc}}}
 				</div>
 				<div class="welcome__btn">
 					<a href="" class="btn">
@@ -58,30 +61,16 @@
 					</a>
 				</div>
 				<div class="welcome-dishes">
+					{% for product in top_products %}
 					<a href="" class="welcome-dishes__wrap">
 						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/meal.png" alt="">
+							<img src="{{{product.thumb}}}" alt="">
 							<div class="welcome-dishes__text">
-								MEAL
+								{{{product.name}}}
 							</div>
 						</div>
 					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/pizza.png" alt="">
-							<div class="welcome-dishes__text">
-								PIZZA
-							</div>
-						</div>
-					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/sushi.png" alt="">
-							<div class="welcome-dishes__text">
-								SUSHI
-							</div>
-						</div>
-					</a>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -97,48 +86,34 @@
 					</svg>						
 				</div>
 				<div class="food-title__text global-title__text">
-					OUR FOOD
+					{{{variables.foodMainTitile}}}
 				</div>
 			</div>
 			<div class="food">
 				<div class="food-wrap">
 					<div class="food-wrap__img">
-						<img src="/andriilizvinskyilight/img/food.png" alt="">
+						<img src="{{{variables.foodImg}}}" alt="">
 					</div>
 					<div class="food-wrap-text">
 						<div class="food-wrap-text__title">
-							Lorem Ipsum is simply <span>dummy text</span>
+							{{{variables.foodTitle}}}
 						</div>
 						<div class="food-wrap-text__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+							{{{variables.foodDesc}}}
 						</div>
 					</div>
 				</div>
 				<div class="welcome-dishes food-category">
+					{% for product in top_products %}
 					<a href="" class="welcome-dishes__wrap">
 						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/meal.png" alt="">
+							<img src="{{{product.thumb}}}" alt="">
 							<div class="welcome-dishes__text">
-								MEAL
+								{{{product.name}}}
 							</div>
 						</div>
 					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/pizza.png" alt="">
-							<div class="welcome-dishes__text">
-								PIZZA
-							</div>
-						</div>
-					</a>
-					<a href="" class="welcome-dishes__wrap">
-						<div class="welcome-dishes__img">
-							<img src="/andriilizvinskyilight/img/sushi.png" alt="">
-							<div class="welcome-dishes__text">
-								SUSHI
-							</div>
-						</div>
-					</a>
+					{% endfor %}
 				</div>
 				<div class="food__btn">
 					<a href="" class="btn">
@@ -166,29 +141,28 @@
 					</svg>						
 				</div>
 				<div class="food-title__text global-title__text">
-					OUR RESTOURANT
+					{{{variables.restMainTitile}}}
 				</div>
 			</div>
 			<div class="restaurant-wrap">
 				<div class="restaurant-wrap-text">
 					<div class="restaurant-wrap-text__title">
-						Lorem Ipsum is simply <span>dummy text</span>
+						{{{variables.restTitle}}}
 					</div>
 					<div class="restaurant-wrap-text__description">
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a </p>
-						<p>passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+						{{{variables.restDesc}}}
 					</div>
 				</div>
 				<div class="restaurant-wrap-slider">
 					<div class="restaurant-wrap-slider-init">
 						<div class="restaurant-wrap-slider-init__img">
-							<img src="/andriilizvinskyilight/img/slider/1.png" alt="">
+							<img src="{{{variables.restFirstImg}}}" alt="">
 						</div>
 						<div class="restaurant-wrap-slider-init__img">
-							<img src="/andriilizvinskyilight/img/slider/1.png" alt="">
+							<img src="{{{variables.restFirstImg}}}" alt="">
 						</div>
 						<div class="restaurant-wrap-slider-init__img">
-							<img src="/andriilizvinskyilight/img/slider/1.png" alt="">
+							<img src="{{{variables.restFirstImg}}}" alt="">
 						</div>
 					</div>
 				</div>
@@ -206,41 +180,36 @@
 					</svg>						
 				</div>
 				<div class="food-title__text global-title__text">
-					OUR ARTICLES
+					{{{variables.artcileMainTitile}}}
 				</div>
 			</div>
 			<div class="articles-l-wrap">
 				<div class="articles-l__column articles-l__column--first">
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/1.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+					{% for article in articles %}
+						<a href="" class="articles-l__item">
+							<div class="articles-l__item-img">
+								<img src="{{{article.thumb}}}" alt="">
+								<div class="articles-l__item-text">
+									{{{article.name}}}
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="" class="articles-l__item">
-						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/2.png" alt="">
-							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
-							</div>
-						</div>
-					</a>
+						</a>
+					{% endfor %}
 				</div>
 				<div class="articles-l__column articles-l__column--second">
+					{% for mainart in mainarc %}
 					<a href="" class="articles-l__item">
 						<div class="articles-l__item-img">
-							<img src="/andriilizvinskyilight/img/blog/3.png" alt="">
+							<img src="/{{{mainart.thumb}}}" alt="">
 							<div class="articles-l__item-text">
-								Lorem Ipsum is simply dummy text 
+								{{{mainart.name}}}
 							</div>
 						</div>
 						<div class="articles-l__description">
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
-							passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+							{{{mainart.short}}}
 						</div>
 					</a>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -256,23 +225,23 @@
 					</svg>						
 				</div>
 				<div class="food-title__text global-title__text">
-					OUR CONTACTS
+					{{{variables.contactsMainTitile}}}
 				</div>
 			</div>
 			<div class="contacts-map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d42149.758698230675!2d26.561544231822815!3d48.679482962175314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDQwJzUxLjgiTiAyNsKwMzQnNTEuNyJF!5e0!3m2!1suk!2sua!4v1709554987525!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="contacts-map__icons">
-				<a href="" class="contacts-map__icons-item">
+				<a href="{{{variables.link_telegram}}}" class="contacts-map__icons-item">
 					<img src="/andriilizvinskyilight/img/icon/telegram.svg" alt="">
 				</a>
-				<a href="" class="contacts-map__icons-item">
+				<a href="{{{variables.link_phone}}}" class="contacts-map__icons-item">
 					<img src="/andriilizvinskyilight/img/icon/phone.svg" alt="">
 				</a>
-				<a href="" class="contacts-map__icons-item">
+				<a href="{{{variables.link_instagram}}}" class="contacts-map__icons-item">
 					<img src="/andriilizvinskyilight/img/icon/instagram.svg" alt="">
 				</a>
-				<a href="" class="contacts-map__icons-item">
+				<a href="{{{variables.link_mail}}}" class="contacts-map__icons-item">
 					<img src="/andriilizvinskyilight/img/icon/email.svg" alt="">
 				</a>
 			</div>
@@ -304,24 +273,24 @@
 				</div>
 			</div>
 			<div class="footer-wrap__item footer-wrap__item--logo">
-				<img src="/andriilizvinskyilight/img/footer.svg" alt="">
+				<img src="/andriilizvinskyilight/img/icon/logo.svg" alt="">
 			</div>
 			<div class="footer-wrap__item footer-wrap__item--socials">
-				<a href="">
+				<a href="{{{variables.link_mail}}}">
 					<img src="/andriilizvinskyilight/img/icon/mail.svg" alt="">
-					<span>@examplemail@gmail.com</span>
+					<span>{{{variables.mail}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_phone}}}">
 					<img src="/andriilizvinskyilight/img/icon/call.svg" alt="">
-					<span>+380 836547145</span>
+					<span>{{{variables.tel}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_telegram}}}">
 					<img src="/andriilizvinskyilight/img/icon/tel.svg" alt="">
-					<span>@KpRestorNich</span>
+					<span>{{{variables.telega}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_instagram}}}">
 					<img src="/andriilizvinskyilight/img/icon/inst.svg" alt="">
-					<span>@re_st_or_an__kp01</span>
+					<span>{{{variables.insta}}}</span>
 				</a>
 			</div>
 		</div>
