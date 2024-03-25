@@ -122,6 +122,7 @@ ul{
 	margin-top: -30px;
 	height: calc(100vh - 190px);
 	overflow: hidden;
+	scroll-behavior: smooth;
 	&-left{
 		flex: 0 0 30%;
 		max-width: 30%;
@@ -358,8 +359,7 @@ ul{
 		max-width: 50%;
 		overflow-y: scroll;
 		height: 100%;
-		border-left: 4px solid rgba(217,217,217,.1);
-		border-right: 4px solid rgba(217,217,217,.1);
+		scroll-behavior: smooth;
 		&--big{
 			flex: 0 0 80%;
 			max-width: 80%;

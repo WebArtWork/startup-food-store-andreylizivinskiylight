@@ -1,3 +1,13 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 $(".burger-wrap").click(function () {
   $(".header-wrap__navigation").toggleClass("header-wrap__navigation--open");
   $(".burger").toggleClass('burger--close');
